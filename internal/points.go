@@ -8,16 +8,8 @@ import (
 	"time"
 )
 
-// CalculatePoints takes a Receipt and calculates the points according to the following rules:
-//
-// Rule 1: One point for every alphanumeric character in the retailer name
-// Rule 2: 50 points if the total is a round dollar amount
-// Rule 3: 25 points if the total is a multiple of 0.25
-// Rule 4: 5 points for every two items
-// Rule 5: Points for item descriptions being a multiple of 3
-// Rule 6: 5 points if the total is greater than 10.00
-// Rule 7: 6 points if the day of the purchase date is odd
-// Rule 8: 10 points if purchase time is between 2:00 PM and 4:00 PM
+// CalculatePoints calculates the total points for a given receipt based on predefined rules.
+
 func CalculatePoints(receipt Receipt) int {
 	points := 0
 
